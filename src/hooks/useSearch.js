@@ -20,7 +20,6 @@ const search = (headings, loweredSearchText) => {
 };
 
 export default function useSearch(searchText) {
-  // console.log({ searchText });
   return useMemo(
     () => search(mockData, searchText.toLowerCase()),
     [searchText]
