@@ -18,7 +18,7 @@ export default function App() {
         />
       </div>
       {headings.map((heading) => (
-        <Heading key={heading.url} heading={heading} />
+        <Heading key={heading.url} heading={heading} searchText={searchText} />
       ))}
     </div>
   );
